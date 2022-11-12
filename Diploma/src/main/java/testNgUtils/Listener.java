@@ -18,6 +18,7 @@ public class Listener implements ITestListener {
         // <условие> ? <если условие = true> : <если условие = false>
         String propertyName = context.getSuite().getParameter("config") == null ? System.getProperty("config") : context.getSuite().getParameter("config");
         new PropertyReader(propertyName);
+        System.out.println(propertyName);
     }
 
     @Override

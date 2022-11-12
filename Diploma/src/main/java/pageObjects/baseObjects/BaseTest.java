@@ -23,6 +23,7 @@ public abstract class BaseTest {
     @BeforeTest
     public void setUp() {
         log.debug("I'm started new wed driver!");
+        System.out.println("Куда пропал Base");
         properties = getProperties();
         getManager(DriverManagerType.valueOf(properties.containsKey("browser") ? properties.getProperty("browser").toUpperCase() : "CHROME"));
     }
@@ -38,7 +39,7 @@ public abstract class BaseTest {
         return instance;
     }
 
-    @AfterTest(alwaysRun = true)
+    @AfterTest()
     public void stop() {
         log.debug("I'm close wed driver!");
         closeWebDriver();
