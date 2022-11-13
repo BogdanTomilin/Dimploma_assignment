@@ -15,7 +15,9 @@ public class test extends BaseTest {
     @Test
     public void loginTest (){
         new HomePage()
-                .open();
+                .open()
+                .clickLoginBtn()
+                .clickLoginBtn2();
 
     }
 }
