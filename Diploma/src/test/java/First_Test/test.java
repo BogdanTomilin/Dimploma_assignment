@@ -5,7 +5,9 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.baseObjects.BaseTest;
+import pageObjects.litnet.CreateAndRemoveEssence;
 import pageObjects.litnet.HomePage;
+import pageObjects.litnet.LoginPage;
 
 public class test extends BaseTest {
 
@@ -18,6 +20,12 @@ public class test extends BaseTest {
                 .open()
                 .clickLoginBtn()
                 .clickLoginBtn2();
+        new LoginPage()
+                .enterUsername()
+                .enterPassword()
+                .clickLogin();
+        new CreateAndRemoveEssence();
+
 
     }
 }

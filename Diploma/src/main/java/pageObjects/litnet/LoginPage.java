@@ -8,10 +8,10 @@ public class LoginPage extends BasePage {
     private final By username = By.id("loginform-login");
     private final By password = By.id("loginform-password");
     private final By loginBtn = By.cssSelector("button[type='submit']");
-    /*Верен ли этот локатор?*/
+
 
     public LoginPage enterUsername() {
-        enter(this.username, properties.getProperty("username"));
+        enter(this.username, properties.getProperty("email"));
         return this;
     }
 
