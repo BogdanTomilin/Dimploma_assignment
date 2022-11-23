@@ -52,7 +52,6 @@ public class CreateEssence extends BasePage {
 
  public CreateEssence VerifyLibrary (){
      Assert.assertEquals(getText(title), "Нищенка в Королевской Академии магии. Зимняя практика 2");
-     System.out.println(getText(title));
      return this;
  }
 

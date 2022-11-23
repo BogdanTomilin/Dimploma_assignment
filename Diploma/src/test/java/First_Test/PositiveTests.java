@@ -8,6 +8,7 @@ import pageObjects.baseObjects.BaseTest;
 import pageObjects.litnet.CreateEssence;
 import pageObjects.litnet.HomePage;
 import pageObjects.litnet.LoginPage;
+import pageObjects.litnet.RemoveEssence;
 
 public class PositiveTests extends BaseTest {
 
@@ -24,7 +25,7 @@ public class PositiveTests extends BaseTest {
                     .clickLogin();
     }
 
-    @Test
+    @Test (priority = 1)
     public void positiveTestThree (){
         new CreateEssence()
                 .clickLitnetBtn()
@@ -35,13 +36,14 @@ public class PositiveTests extends BaseTest {
                 .VerifyLibrary();
     }
 
-//    @Test
-//    public void positiveTestFour (){
-//       new CreateAndRemoveEssence()
-//               .clickMyLibrary()
-//               .clickMove()
-//               .clickRemoveFromLibrary();
-//    }
+    @Test (priority = 2)
+    public void positiveTestFour (){
+       new RemoveEssence()
+               .clickMove()
+               .clickRemoveFromLibrary()
+               .VerifyLibrary();
+    }
+
 
 
 }
