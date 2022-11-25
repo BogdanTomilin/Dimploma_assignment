@@ -13,7 +13,7 @@ public class RemoveEssence extends BasePage {
     private final By move = By.xpath("/html/body/div[3]/div/div/div[2]/div[6]/div/div[2]/div[2]/button");
 
     private final By removeFromLibrary = By.xpath("/html/body/div[3]/div/div/div[2]/div[6]/div[1]/div[2]/div[2]/ul/li[3]/a");
-
+     /*[class='dropdown-menu']>li>a[href$="400348"]*/
     private final By title = By.cssSelector("[class=no_items_found]");
 
     public RemoveEssence clickMyLibrary (){
@@ -29,9 +29,9 @@ public class RemoveEssence extends BasePage {
     public RemoveEssence clickRemoveFromLibrary  () {
         click(removeFromLibrary);
         return this;
-    }
+    } /*использовать select*/
 
-    public RemoveEssence VerifyLibrary (){
+    public RemoveEssence verifyLibrary (){
         Assert.assertEquals(getText(title), "В библиотеке пока пусто");
         return this;
     }

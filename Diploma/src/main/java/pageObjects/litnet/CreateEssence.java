@@ -50,10 +50,11 @@ public class CreateEssence extends BasePage {
         return this;
     }
 
- public CreateEssence VerifyLibrary (){
+
+    public CreateEssence verifyLibrary (){
      Assert.assertEquals(getText(title), "Нищенка в Королевской Академии магии. Зимняя практика 2");
      return this;
- }
+    }
 
 
 

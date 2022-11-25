@@ -20,7 +20,6 @@ public class BadData extends BasePage {
 
     public BadData VerifyBadData(){
         Assert.assertEquals(getText(title), "Введите поисковый запрос");
-        System.out.println(getText(title));
         return this;
     }
 

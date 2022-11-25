@@ -33,7 +33,7 @@ public class PositiveTests extends BaseTest {
                 .clickBookOne()
                 .clickAddInLibrary()
                 .clickMyLibrary()
-                .VerifyLibrary();
+                .verifyLibrary();
     }
 
     @Test (priority = 2)
@@ -41,7 +41,7 @@ public class PositiveTests extends BaseTest {
        new RemoveEssence()
                .clickMove()
                .clickRemoveFromLibrary()
-               .VerifyLibrary();
+               .verifyLibrary();
     }
 
 

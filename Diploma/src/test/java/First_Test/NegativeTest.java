@@ -31,11 +31,11 @@ public class NegativeTest extends BaseTest {
 //               .VerifyBadData();
 //    }
 
-    @Test
-    public void negativeTestTwo (){
-         new DataExceedingAllowable()
-                 .clickAccount()
-                 .clickEditProfile();
-}
+//    @Test
+//    public void negativeTestTwo (){
+//         new DataExceedingAllowable()
+//                 .clickAccount()
+//                 .clickEditProfile();
+//}
 
 }
