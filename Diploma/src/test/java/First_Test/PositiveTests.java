@@ -5,10 +5,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pageObjects.baseObjects.BaseTest;
-import pageObjects.litnet.CreateEssence;
-import pageObjects.litnet.HomePage;
-import pageObjects.litnet.LoginPage;
-import pageObjects.litnet.RemoveEssence;
+import pageObjects.litnet.*;
 
 public class PositiveTests extends BaseTest {
 
@@ -24,6 +21,14 @@ public class PositiveTests extends BaseTest {
                     .enterPassword()
                     .clickLogin();
     }
+
+    @Test (priority = 3)
+    public void positiveTestTwo (){
+        new PopUpWindow()
+                .clickBell()
+                .checkTableIsDisplayed2();
+    }
+
 
     @Test (priority = 1)
     public void positiveTestThree (){
@@ -44,6 +49,12 @@ public class PositiveTests extends BaseTest {
                .verifyLibrary();
     }
 
-
+    @Test (priority = 4)
+    public void testSix(){
+        new RemoveEssence()
+                .clickEditProfile();
+        new ProfileEditing()
+                .clickChangePhotoBtn();
+    }
 
 }

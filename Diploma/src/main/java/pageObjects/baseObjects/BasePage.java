@@ -76,6 +76,8 @@ public abstract class BasePage {
         findElement(locator).sendKeys(enterData);
     }
 
+
+
     protected void click(By locator) {
         log.debug("I'm click by :: " + locator);
         verifyElementClickable(locator);

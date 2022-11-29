@@ -24,18 +24,23 @@ public class NegativeTest extends BaseTest {
                 .clickLogin();
     }
 
-//    @Test
-//    public void negativeTestOne () {
-//       new BadData()
-//               .clickFind()
-//               .VerifyBadData();
-//    }
+    @Test (priority = 2)
+    public void negativeTestOne () {
+       new BadData()
+               .clickFind()
+               .VerifyBadData();
+    }
 
-//    @Test
-//    public void negativeTestTwo (){
-//         new DataExceedingAllowable()
-//                 .clickAccount()
-//                 .clickEditProfile();
-//}
-
+    @Test  (priority = 1)
+    public void negativeTestTwo (){
+        new DataExceedingAllowable()
+                .clickAccount()
+                .clickEditProfile()
+                 .enterLimit39()
+                 .verifyLimitValuesNormal()
+                 .enterLimit40()
+                 .verifyLimitValuesNormal()
+                .enterLimit41()
+                .verifyLimitValues();
+    }
 }
