@@ -34,13 +34,13 @@ public class NegativeTest extends BaseTest {
     @Test  (priority = 1)
     public void negativeTestTwo (){
         new DataExceedingAllowable()
-                .clickAccount()
-                .clickEditProfile()
-                 .enterLimit39()
-                 .verifyLimitValuesNormal()
-                 .enterLimit40()
-                 .verifyLimitValuesNormal()
-                .enterLimit41()
-                .verifyLimitValues();
+            .clickAccount()
+            .clickEditProfile()
+            .enterLimit("123456789012345678901234567890123456789")
+            .verifyLimitValuesNormal()
+            .enterLimit("1234567890123456789012345678901234567890")
+            .verifyLimitValuesNormal()
+            .enterLimit("12345678901234567890123456789012345678901")
+            .verifyLimitValues();
     }
 }

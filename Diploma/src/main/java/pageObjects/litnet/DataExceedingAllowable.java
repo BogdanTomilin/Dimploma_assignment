@@ -24,23 +24,16 @@ public class DataExceedingAllowable extends BasePage {
         click(account);
         return this;
     }
+
     public DataExceedingAllowable clickEditProfile(){
         click(editProfile);
         return this;
     }
-    public DataExceedingAllowable enterLimit39(){
-        enter(personalSite , "123456789012345678901234567890123456789");
-        return this;
-    }
-    public DataExceedingAllowable enterLimit40(){
-        enter(personalSite , "1234567890123456789012345678901234567890");
-        return this;
-    }
-    public DataExceedingAllowable enterLimit41(){
-        enter(personalSite , "12345678901234567890123456789012345678901");
-        return this;
-    }
 
+    public DataExceedingAllowable enterLimit(String enterData){
+        enter(personalSite, enterData);
+        return this;
+    }
 
     public DataExceedingAllowable verifyLimitValues(){
         Assert.assertEquals(getText(verifyLimitValues),"Значение «Личный сайт» должно содержать максимум 40 символов.");
@@ -53,15 +46,9 @@ public class DataExceedingAllowable extends BasePage {
         return this;
     }
 
-
-
     private void enter(By locator, String enterData) {
         findElement(locator).clear();
         findElement(locator).sendKeys(enterData,Keys.ENTER);
 
     }
-
-
-
-
 }
