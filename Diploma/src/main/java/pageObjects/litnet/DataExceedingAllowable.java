@@ -49,6 +49,5 @@ public class DataExceedingAllowable extends BasePage {
     private void enter(By locator, String enterData) {
         findElement(locator).clear();
         findElement(locator).sendKeys(enterData,Keys.ENTER);
-
     }
 }

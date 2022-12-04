@@ -1,0 +1,1304 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "products",
+    "total",
+    "page"
+  ],
+  "properties": {
+    "products": {
+      "type": "array",
+      "default": [],
+      "title": "The products Schema",
+      "items": {
+        "type": "object",
+        "title": "A Schema",
+        "required": [
+          "id",
+          "key",
+          "name",
+          "full_name",
+          "name_prefix",
+          "extended_name",
+          "schema",
+          "status",
+          "images",
+          "description",
+          "html_url",
+          "reviews",
+          "review_url",
+          "url",
+          "prices",
+          "second"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer",
+            "title": "The id Schema",
+            "examples": [
+              2504915,
+              2504887,
+              3554855
+            ]
+          },
+          "key": {
+            "type": "string",
+            "title": "The key Schema",
+            "examples": [
+              "nswitcholedbn",
+              "nswitcholed",
+              "nswoledspl3ed"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "title": "The name Schema",
+            "examples": [
+              "Switch OLED (черный, с неоновыми Joy-Con)",
+              "Switch OLED (белый)",
+              "Switch OLED Splatoon 3 Edition"
+            ]
+          },
+          "full_name": {
+            "type": "string",
+            "title": "The full_name Schema",
+            "examples": [
+              "Игровая приставка Nintendo Switch OLED (черный, с неоновыми Joy-Con)",
+              "Игровая приставка Nintendo Switch OLED (белый)",
+              "Игровая приставка Nintendo Switch OLED Splatoon 3 Edition"
+            ]
+          },
+          "name_prefix": {
+            "type": "string",
+            "title": "The name_prefix Schema",
+            "examples": [
+              "Игровая приставка"
+            ]
+          },
+          "extended_name": {
+            "type": "string",
+            "title": "The extended_name Schema",
+            "examples": [
+              "Игровая приставка Nintendo Switch OLED (черный, с неоновыми Joy-Con)",
+              "Игровая приставка Nintendo Switch OLED (белый)",
+              "Игровая приставка Nintendo Switch OLED Splatoon 3 Edition"
+            ]
+          },
+          "schema": {
+            "type": "object",
+            "title": "The schema Schema",
+            "required": [
+              "key"
+            ],
+            "properties": {
+              "key": {
+                "type": "string",
+                "title": "The key Schema",
+                "examples": [
+                  "console"
+                ]
+              }
+            },
+            "examples": [{
+              "key": "console"
+            },
+              {
+                "key": "console"
+              },
+              {
+                "key": "console"
+              }]
+          },
+          "status": {
+            "type": "string",
+            "title": "The status Schema",
+            "examples": [
+              "active"
+            ]
+          },
+          "images": {
+            "type": "object",
+            "title": "The images Schema",
+            "required": [
+              "header",
+              "icon"
+            ],
+            "properties": {
+              "header": {
+                "type": "string",
+                "title": "The header Schema",
+                "examples": [
+                  "//content2.onliner.by/catalog/device/header/9736f1406b9df69383590548cd5f3a98.jpeg",
+                  "//content2.onliner.by/catalog/device/header/00800130914e1bfc38710fc9425994b7.jpeg",
+                  "//content2.onliner.by/catalog/device/header/ab70093af95a76c2354117bf2e189364.jpeg"
+                ]
+              },
+              "icon": {
+                "type": "null",
+                "title": "The icon Schema",
+                "examples": [
+                  null
+                ]
+              }
+            },
+            "examples": [{
+              "header": "//content2.onliner.by/catalog/device/header/9736f1406b9df69383590548cd5f3a98.jpeg",
+              "icon": null
+            },
+              {
+                "header": "//content2.onliner.by/catalog/device/header/00800130914e1bfc38710fc9425994b7.jpeg",
+                "icon": null
+              },
+              {
+                "header": "//content2.onliner.by/catalog/device/header/ab70093af95a76c2354117bf2e189364.jpeg",
+                "icon": null
+              }]
+          },
+          "description": {
+            "type": "string",
+            "title": "The description Schema",
+            "examples": [
+              "64 ГБ, экран 7\", разрешение игр - Full HD (1080p)",
+              "64 ГБ, экран 7\", разрешение игр - Full HD (1080p), \tигровая стилизация"
+            ]
+          },
+          "html_url": {
+            "type": "string",
+            "title": "The html_url Schema",
+            "examples": [
+              "https://catalog.onliner.by/console/nintendo/nswitcholedbn",
+              "https://catalog.onliner.by/console/nintendo/nswitcholed",
+              "https://catalog.onliner.by/console/nintendo/nswoledspl3ed"
+            ]
+          },
+          "reviews": {
+            "type": "object",
+            "title": "The reviews Schema",
+            "required": [
+              "rating",
+              "count",
+              "html_url",
+              "url"
+            ],
+            "properties": {
+              "rating": {
+                "type": "integer",
+                "title": "The rating Schema",
+                "examples": [
+                  45
+                ]
+              },
+              "count": {
+                "type": "integer",
+                "title": "The count Schema",
+                "examples": [
+                  6
+                ]
+              },
+              "html_url": {
+                "type": "string",
+                "title": "The html_url Schema",
+                "examples": [
+                  "https://catalog.onliner.by/console/nintendo/nswitcholedbn/reviews",
+                  "https://catalog.onliner.by/console/nintendo/nswitcholed/reviews",
+                  "https://catalog.onliner.by/console/nintendo/nswoledspl3ed/reviews"
+                ]
+              },
+              "url": {
+                "type": "string",
+                "title": "The url Schema",
+                "examples": [
+                  "https://catalog.api.onliner.by/products/nswitcholedbn/reviews",
+                  "https://catalog.api.onliner.by/products/nswitcholed/reviews",
+                  "https://catalog.api.onliner.by/products/nswoledspl3ed/reviews"
+                ]
+              }
+            },
+            "examples": [{
+              "rating": 45,
+              "count": 6,
+              "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholedbn/reviews",
+              "url": "https://catalog.api.onliner.by/products/nswitcholedbn/reviews"
+            },
+              {
+                "rating": 45,
+                "count": 6,
+                "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholed/reviews",
+                "url": "https://catalog.api.onliner.by/products/nswitcholed/reviews"
+              },
+              {
+                "rating": 45,
+                "count": 6,
+                "html_url": "https://catalog.onliner.by/console/nintendo/nswoledspl3ed/reviews",
+                "url": "https://catalog.api.onliner.by/products/nswoledspl3ed/reviews"
+              }]
+          },
+          "review_url": {
+            "type": "string",
+            "title": "The review_url Schema",
+            "examples": [
+              "https://tech.onliner.by/2021/10/24/obzor-novoj-nintendo-switch-krutoj-ekran-i-vsyo"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "title": "The url Schema",
+            "examples": [
+              "https://catalog.api.onliner.by/products/nswitcholedbn",
+              "https://catalog.api.onliner.by/products/nswitcholed",
+              "https://catalog.api.onliner.by/products/nswoledspl3ed"
+            ]
+          },
+          "prices": {
+            "type": "object",
+            "title": "The prices Schema",
+            "required": [
+              "price_min",
+              "price_max",
+              "offers",
+              "html_url",
+              "url"
+            ],
+            "properties": {
+              "price_min": {
+                "type": "object",
+                "title": "The price_min Schema",
+                "required": [
+                  "amount",
+                  "currency",
+                  "converted"
+                ],
+                "properties": {
+                  "amount": {
+                    "type": "string",
+                    "title": "The amount Schema",
+                    "examples": [
+                      "1061.90",
+                      "1060.90",
+                      "1294.90"
+                    ]
+                  },
+                  "currency": {
+                    "type": "string",
+                    "title": "The currency Schema",
+                    "examples": [
+                      "BYN"
+                    ]
+                  },
+                  "converted": {
+                    "type": "object",
+                    "title": "The converted Schema",
+                    "required": [
+                      "BYN"
+                    ],
+                    "properties": {
+                      "BYN": {
+                        "type": "object",
+                        "title": "The BYN Schema",
+                        "required": [
+                          "amount",
+                          "currency"
+                        ],
+                        "properties": {
+                          "amount": {
+                            "type": "string",
+                            "title": "The amount Schema",
+                            "examples": [
+                              "1061.90",
+                              "1060.90",
+                              "1294.90"
+                            ]
+                          },
+                          "currency": {
+                            "type": "string",
+                            "title": "The currency Schema",
+                            "examples": [
+                              "BYN"
+                            ]
+                          }
+                        },
+                        "examples": [{
+                          "amount": "1061.90",
+                          "currency": "BYN"
+                        },
+                          {
+                            "amount": "1060.90",
+                            "currency": "BYN"
+                          },
+                          {
+                            "amount": "1294.90",
+                            "currency": "BYN"
+                          }]
+                      }
+                    },
+                    "examples": [{
+                      "BYN": {
+                        "amount": "1061.90",
+                        "currency": "BYN"
+                      }
+                    },
+                      {
+                        "BYN": {
+                          "amount": "1060.90",
+                          "currency": "BYN"
+                        }
+                      },
+                      {
+                        "BYN": {
+                          "amount": "1294.90",
+                          "currency": "BYN"
+                        }
+                      }]
+                  }
+                },
+                "examples": [{
+                  "amount": "1061.90",
+                  "currency": "BYN",
+                  "converted": {
+                    "BYN": {
+                      "amount": "1061.90",
+                      "currency": "BYN"
+                    }
+                  }
+                },
+                  {
+                    "amount": "1060.90",
+                    "currency": "BYN",
+                    "converted": {
+                      "BYN": {
+                        "amount": "1060.90",
+                        "currency": "BYN"
+                      }
+                    }
+                  },
+                  {
+                    "amount": "1294.90",
+                    "currency": "BYN",
+                    "converted": {
+                      "BYN": {
+                        "amount": "1294.90",
+                        "currency": "BYN"
+                      }
+                    }
+                  }]
+              },
+              "price_max": {
+                "type": "object",
+                "title": "The price_max Schema",
+                "required": [
+                  "amount",
+                  "currency",
+                  "converted"
+                ],
+                "properties": {
+                  "amount": {
+                    "type": "string",
+                    "title": "The amount Schema",
+                    "examples": [
+                      "1335.00",
+                      "1312.86",
+                      "1451.50"
+                    ]
+                  },
+                  "currency": {
+                    "type": "string",
+                    "title": "The currency Schema",
+                    "examples": [
+                      "BYN"
+                    ]
+                  },
+                  "converted": {
+                    "type": "object",
+                    "title": "The converted Schema",
+                    "required": [
+                      "BYN"
+                    ],
+                    "properties": {
+                      "BYN": {
+                        "type": "object",
+                        "title": "The BYN Schema",
+                        "required": [
+                          "amount",
+                          "currency"
+                        ],
+                        "properties": {
+                          "amount": {
+                            "type": "string",
+                            "title": "The amount Schema",
+                            "examples": [
+                              "1335.00",
+                              "1312.86",
+                              "1451.50"
+                            ]
+                          },
+                          "currency": {
+                            "type": "string",
+                            "title": "The currency Schema",
+                            "examples": [
+                              "BYN"
+                            ]
+                          }
+                        },
+                        "examples": [{
+                          "amount": "1335.00",
+                          "currency": "BYN"
+                        },
+                          {
+                            "amount": "1312.86",
+                            "currency": "BYN"
+                          },
+                          {
+                            "amount": "1451.50",
+                            "currency": "BYN"
+                          }]
+                      }
+                    },
+                    "examples": [{
+                      "BYN": {
+                        "amount": "1335.00",
+                        "currency": "BYN"
+                      }
+                    },
+                      {
+                        "BYN": {
+                          "amount": "1312.86",
+                          "currency": "BYN"
+                        }
+                      },
+                      {
+                        "BYN": {
+                          "amount": "1451.50",
+                          "currency": "BYN"
+                        }
+                      }]
+                  }
+                },
+                "examples": [{
+                  "amount": "1335.00",
+                  "currency": "BYN",
+                  "converted": {
+                    "BYN": {
+                      "amount": "1335.00",
+                      "currency": "BYN"
+                    }
+                  }
+                },
+                  {
+                    "amount": "1312.86",
+                    "currency": "BYN",
+                    "converted": {
+                      "BYN": {
+                        "amount": "1312.86",
+                        "currency": "BYN"
+                      }
+                    }
+                  },
+                  {
+                    "amount": "1451.50",
+                    "currency": "BYN",
+                    "converted": {
+                      "BYN": {
+                        "amount": "1451.50",
+                        "currency": "BYN"
+                      }
+                    }
+                  }]
+              },
+              "offers": {
+                "type": "object",
+                "title": "The offers Schema",
+                "required": [
+                  "count"
+                ],
+                "properties": {
+                  "count": {
+                    "type": "integer",
+                    "title": "The count Schema",
+                    "examples": [
+                      16,
+                      21,
+                      15
+                    ]
+                  }
+                },
+                "examples": [{
+                  "count": 16
+                },
+                  {
+                    "count": 21
+                  },
+                  {
+                    "count": 15
+                  }]
+              },
+              "html_url": {
+                "type": "string",
+                "title": "The html_url Schema",
+                "examples": [
+                  "https://catalog.onliner.by/console/nintendo/nswitcholedbn/prices",
+                  "https://catalog.onliner.by/console/nintendo/nswitcholed/prices",
+                  "https://catalog.onliner.by/console/nintendo/nswoledspl3ed/prices"
+                ]
+              },
+              "url": {
+                "type": "string",
+                "title": "The url Schema",
+                "examples": [
+                  "https://shop.api.onliner.by/products/nswitcholedbn/positions",
+                  "https://shop.api.onliner.by/products/nswitcholed/positions",
+                  "https://shop.api.onliner.by/products/nswoledspl3ed/positions"
+                ]
+              }
+            },
+            "examples": [{
+              "price_min": {
+                "amount": "1061.90",
+                "currency": "BYN",
+                "converted": {
+                  "BYN": {
+                    "amount": "1061.90",
+                    "currency": "BYN"
+                  }
+                }
+              },
+              "price_max": {
+                "amount": "1335.00",
+                "currency": "BYN",
+                "converted": {
+                  "BYN": {
+                    "amount": "1335.00",
+                    "currency": "BYN"
+                  }
+                }
+              },
+              "offers": {
+                "count": 16
+              },
+              "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholedbn/prices",
+              "url": "https://shop.api.onliner.by/products/nswitcholedbn/positions"
+            },
+              {
+                "price_min": {
+                  "amount": "1060.90",
+                  "currency": "BYN",
+                  "converted": {
+                    "BYN": {
+                      "amount": "1060.90",
+                      "currency": "BYN"
+                    }
+                  }
+                },
+                "price_max": {
+                  "amount": "1312.86",
+                  "currency": "BYN",
+                  "converted": {
+                    "BYN": {
+                      "amount": "1312.86",
+                      "currency": "BYN"
+                    }
+                  }
+                },
+                "offers": {
+                  "count": 21
+                },
+                "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholed/prices",
+                "url": "https://shop.api.onliner.by/products/nswitcholed/positions"
+              },
+              {
+                "price_min": {
+                  "amount": "1294.90",
+                  "currency": "BYN",
+                  "converted": {
+                    "BYN": {
+                      "amount": "1294.90",
+                      "currency": "BYN"
+                    }
+                  }
+                },
+                "price_max": {
+                  "amount": "1451.50",
+                  "currency": "BYN",
+                  "converted": {
+                    "BYN": {
+                      "amount": "1451.50",
+                      "currency": "BYN"
+                    }
+                  }
+                },
+                "offers": {
+                  "count": 15
+                },
+                "html_url": "https://catalog.onliner.by/console/nintendo/nswoledspl3ed/prices",
+                "url": "https://shop.api.onliner.by/products/nswoledspl3ed/positions"
+              }]
+          },
+          "second": {
+            "type": "object",
+            "title": "The second Schema",
+            "required": [
+              "offers_count",
+              "min_price"
+            ],
+            "properties": {
+              "offers_count": {
+                "type": "integer",
+                "title": "The offers_count Schema",
+                "examples": [
+                  0,
+                  3
+                ]
+              },
+              "min_price": {
+                "type": [
+                  "null",
+                  "object"
+                ],
+                "title": "The min_price Schema",
+                "required": [
+                  "amount",
+                  "currency"
+                ],
+                "properties": {
+                  "amount": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The amount Schema",
+                    "examples": [
+                      "1000.00"
+                    ]
+                  },
+                  "currency": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The currency Schema",
+                    "examples": [
+                      "BYN"
+                    ]
+                  }
+                },
+                "examples": [
+                  null,
+                  {
+                    "amount": "1000.00",
+                    "currency": "BYN"
+                  }
+                ]
+              }
+            },
+            "examples": [{
+              "offers_count": 0,
+              "min_price": null
+            },
+              {
+                "offers_count": 3,
+                "min_price": {
+                  "amount": "1000.00",
+                  "currency": "BYN"
+                }
+              },
+              {
+                "offers_count": 0,
+                "min_price": null
+              }]
+          }
+        },
+        "examples": [{
+          "id": 2504915,
+          "key": "nswitcholedbn",
+          "name": "Switch OLED (черный, с неоновыми Joy-Con)",
+          "full_name": "Игровая приставка Nintendo Switch OLED (черный, с неоновыми Joy-Con)",
+          "name_prefix": "Игровая приставка",
+          "extended_name": "Игровая приставка Nintendo Switch OLED (черный, с неоновыми Joy-Con)",
+          "schema": {
+            "key": "console"
+          },
+          "status": "active",
+          "images": {
+            "header": "//content2.onliner.by/catalog/device/header/9736f1406b9df69383590548cd5f3a98.jpeg",
+            "icon": null
+          },
+          "description": "64 ГБ, экран 7\", разрешение игр - Full HD (1080p)",
+          "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholedbn",
+          "reviews": {
+            "rating": 45,
+            "count": 6,
+            "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholedbn/reviews",
+            "url": "https://catalog.api.onliner.by/products/nswitcholedbn/reviews"
+          },
+          "review_url": "https://tech.onliner.by/2021/10/24/obzor-novoj-nintendo-switch-krutoj-ekran-i-vsyo",
+          "url": "https://catalog.api.onliner.by/products/nswitcholedbn",
+          "prices": {
+            "price_min": {
+              "amount": "1061.90",
+              "currency": "BYN",
+              "converted": {
+                "BYN": {
+                  "amount": "1061.90",
+                  "currency": "BYN"
+                }
+              }
+            },
+            "price_max": {
+              "amount": "1335.00",
+              "currency": "BYN",
+              "converted": {
+                "BYN": {
+                  "amount": "1335.00",
+                  "currency": "BYN"
+                }
+              }
+            },
+            "offers": {
+              "count": 16
+            },
+            "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholedbn/prices",
+            "url": "https://shop.api.onliner.by/products/nswitcholedbn/positions"
+          },
+          "second": {
+            "offers_count": 0,
+            "min_price": null
+          }
+        },
+          {
+            "id": 2504887,
+            "key": "nswitcholed",
+            "name": "Switch OLED (белый)",
+            "full_name": "Игровая приставка Nintendo Switch OLED (белый)",
+            "name_prefix": "Игровая приставка",
+            "extended_name": "Игровая приставка Nintendo Switch OLED (белый)",
+            "schema": {
+              "key": "console"
+            },
+            "status": "active",
+            "images": {
+              "header": "//content2.onliner.by/catalog/device/header/00800130914e1bfc38710fc9425994b7.jpeg",
+              "icon": null
+            },
+            "description": "64 ГБ, экран 7\", разрешение игр - Full HD (1080p)",
+            "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholed",
+            "reviews": {
+              "rating": 45,
+              "count": 6,
+              "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholed/reviews",
+              "url": "https://catalog.api.onliner.by/products/nswitcholed/reviews"
+            },
+            "review_url": "https://tech.onliner.by/2021/10/24/obzor-novoj-nintendo-switch-krutoj-ekran-i-vsyo",
+            "url": "https://catalog.api.onliner.by/products/nswitcholed",
+            "prices": {
+              "price_min": {
+                "amount": "1060.90",
+                "currency": "BYN",
+                "converted": {
+                  "BYN": {
+                    "amount": "1060.90",
+                    "currency": "BYN"
+                  }
+                }
+              },
+              "price_max": {
+                "amount": "1312.86",
+                "currency": "BYN",
+                "converted": {
+                  "BYN": {
+                    "amount": "1312.86",
+                    "currency": "BYN"
+                  }
+                }
+              },
+              "offers": {
+                "count": 21
+              },
+              "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholed/prices",
+              "url": "https://shop.api.onliner.by/products/nswitcholed/positions"
+            },
+            "second": {
+              "offers_count": 3,
+              "min_price": {
+                "amount": "1000.00",
+                "currency": "BYN"
+              }
+            }
+          },
+          {
+            "id": 3554855,
+            "key": "nswoledspl3ed",
+            "name": "Switch OLED Splatoon 3 Edition",
+            "full_name": "Игровая приставка Nintendo Switch OLED Splatoon 3 Edition",
+            "name_prefix": "Игровая приставка",
+            "extended_name": "Игровая приставка Nintendo Switch OLED Splatoon 3 Edition",
+            "schema": {
+              "key": "console"
+            },
+            "status": "active",
+            "images": {
+              "header": "//content2.onliner.by/catalog/device/header/ab70093af95a76c2354117bf2e189364.jpeg",
+              "icon": null
+            },
+            "description": "64 ГБ, экран 7\", разрешение игр - Full HD (1080p), \tигровая стилизация",
+            "html_url": "https://catalog.onliner.by/console/nintendo/nswoledspl3ed",
+            "reviews": {
+              "rating": 45,
+              "count": 6,
+              "html_url": "https://catalog.onliner.by/console/nintendo/nswoledspl3ed/reviews",
+              "url": "https://catalog.api.onliner.by/products/nswoledspl3ed/reviews"
+            },
+            "review_url": "https://tech.onliner.by/2021/10/24/obzor-novoj-nintendo-switch-krutoj-ekran-i-vsyo",
+            "url": "https://catalog.api.onliner.by/products/nswoledspl3ed",
+            "prices": {
+              "price_min": {
+                "amount": "1294.90",
+                "currency": "BYN",
+                "converted": {
+                  "BYN": {
+                    "amount": "1294.90",
+                    "currency": "BYN"
+                  }
+                }
+              },
+              "price_max": {
+                "amount": "1451.50",
+                "currency": "BYN",
+                "converted": {
+                  "BYN": {
+                    "amount": "1451.50",
+                    "currency": "BYN"
+                  }
+                }
+              },
+              "offers": {
+                "count": 15
+              },
+              "html_url": "https://catalog.onliner.by/console/nintendo/nswoledspl3ed/prices",
+              "url": "https://shop.api.onliner.by/products/nswoledspl3ed/positions"
+            },
+            "second": {
+              "offers_count": 0,
+              "min_price": null
+            }
+          }]
+      },
+      "examples": [
+        [{
+          "id": 2504915,
+          "key": "nswitcholedbn",
+          "name": "Switch OLED (черный, с неоновыми Joy-Con)",
+          "full_name": "Игровая приставка Nintendo Switch OLED (черный, с неоновыми Joy-Con)",
+          "name_prefix": "Игровая приставка",
+          "extended_name": "Игровая приставка Nintendo Switch OLED (черный, с неоновыми Joy-Con)",
+          "schema": {
+            "key": "console"
+          },
+          "status": "active",
+          "images": {
+            "header": "//content2.onliner.by/catalog/device/header/9736f1406b9df69383590548cd5f3a98.jpeg",
+            "icon": null
+          },
+          "description": "64 ГБ, экран 7\", разрешение игр - Full HD (1080p)",
+          "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholedbn",
+          "reviews": {
+            "rating": 45,
+            "count": 6,
+            "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholedbn/reviews",
+            "url": "https://catalog.api.onliner.by/products/nswitcholedbn/reviews"
+          },
+          "review_url": "https://tech.onliner.by/2021/10/24/obzor-novoj-nintendo-switch-krutoj-ekran-i-vsyo",
+          "url": "https://catalog.api.onliner.by/products/nswitcholedbn",
+          "prices": {
+            "price_min": {
+              "amount": "1061.90",
+              "currency": "BYN",
+              "converted": {
+                "BYN": {
+                  "amount": "1061.90",
+                  "currency": "BYN"
+                }
+              }
+            },
+            "price_max": {
+              "amount": "1335.00",
+              "currency": "BYN",
+              "converted": {
+                "BYN": {
+                  "amount": "1335.00",
+                  "currency": "BYN"
+                }
+              }
+            },
+            "offers": {
+              "count": 16
+            },
+            "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholedbn/prices",
+            "url": "https://shop.api.onliner.by/products/nswitcholedbn/positions"
+          },
+          "second": {
+            "offers_count": 0,
+            "min_price": null
+          }
+        },
+          {
+            "id": 2504887,
+            "key": "nswitcholed",
+            "name": "Switch OLED (белый)",
+            "full_name": "Игровая приставка Nintendo Switch OLED (белый)",
+            "name_prefix": "Игровая приставка",
+            "extended_name": "Игровая приставка Nintendo Switch OLED (белый)",
+            "schema": {
+              "key": "console"
+            },
+            "status": "active",
+            "images": {
+              "header": "//content2.onliner.by/catalog/device/header/00800130914e1bfc38710fc9425994b7.jpeg",
+              "icon": null
+            },
+            "description": "64 ГБ, экран 7\", разрешение игр - Full HD (1080p)",
+            "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholed",
+            "reviews": {
+              "rating": 45,
+              "count": 6,
+              "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholed/reviews",
+              "url": "https://catalog.api.onliner.by/products/nswitcholed/reviews"
+            },
+            "review_url": "https://tech.onliner.by/2021/10/24/obzor-novoj-nintendo-switch-krutoj-ekran-i-vsyo",
+            "url": "https://catalog.api.onliner.by/products/nswitcholed",
+            "prices": {
+              "price_min": {
+                "amount": "1060.90",
+                "currency": "BYN",
+                "converted": {
+                  "BYN": {
+                    "amount": "1060.90",
+                    "currency": "BYN"
+                  }
+                }
+              },
+              "price_max": {
+                "amount": "1312.86",
+                "currency": "BYN",
+                "converted": {
+                  "BYN": {
+                    "amount": "1312.86",
+                    "currency": "BYN"
+                  }
+                }
+              },
+              "offers": {
+                "count": 21
+              },
+              "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholed/prices",
+              "url": "https://shop.api.onliner.by/products/nswitcholed/positions"
+            },
+            "second": {
+              "offers_count": 3,
+              "min_price": {
+                "amount": "1000.00",
+                "currency": "BYN"
+              }
+            }
+          },
+          {
+            "id": 3554855,
+            "key": "nswoledspl3ed",
+            "name": "Switch OLED Splatoon 3 Edition",
+            "full_name": "Игровая приставка Nintendo Switch OLED Splatoon 3 Edition",
+            "name_prefix": "Игровая приставка",
+            "extended_name": "Игровая приставка Nintendo Switch OLED Splatoon 3 Edition",
+            "schema": {
+              "key": "console"
+            },
+            "status": "active",
+            "images": {
+              "header": "//content2.onliner.by/catalog/device/header/ab70093af95a76c2354117bf2e189364.jpeg",
+              "icon": null
+            },
+            "description": "64 ГБ, экран 7\", разрешение игр - Full HD (1080p), \tигровая стилизация",
+            "html_url": "https://catalog.onliner.by/console/nintendo/nswoledspl3ed",
+            "reviews": {
+              "rating": 45,
+              "count": 6,
+              "html_url": "https://catalog.onliner.by/console/nintendo/nswoledspl3ed/reviews",
+              "url": "https://catalog.api.onliner.by/products/nswoledspl3ed/reviews"
+            },
+            "review_url": "https://tech.onliner.by/2021/10/24/obzor-novoj-nintendo-switch-krutoj-ekran-i-vsyo",
+            "url": "https://catalog.api.onliner.by/products/nswoledspl3ed",
+            "prices": {
+              "price_min": {
+                "amount": "1294.90",
+                "currency": "BYN",
+                "converted": {
+                  "BYN": {
+                    "amount": "1294.90",
+                    "currency": "BYN"
+                  }
+                }
+              },
+              "price_max": {
+                "amount": "1451.50",
+                "currency": "BYN",
+                "converted": {
+                  "BYN": {
+                    "amount": "1451.50",
+                    "currency": "BYN"
+                  }
+                }
+              },
+              "offers": {
+                "count": 15
+              },
+              "html_url": "https://catalog.onliner.by/console/nintendo/nswoledspl3ed/prices",
+              "url": "https://shop.api.onliner.by/products/nswoledspl3ed/positions"
+            },
+            "second": {
+              "offers_count": 0,
+              "min_price": null
+            }
+          }]
+      ]
+    },
+    "total": {
+      "type": "integer",
+      "default": 0,
+      "title": "The total Schema",
+      "examples": [
+        3
+      ]
+    },
+    "page": {
+      "type": "object",
+      "default": {},
+      "title": "The page Schema",
+      "required": [
+        "limit",
+        "items",
+        "current",
+        "last"
+      ],
+      "properties": {
+        "limit": {
+          "type": "integer",
+          "default": 0,
+          "title": "The limit Schema",
+          "examples": [
+            10
+          ]
+        },
+        "items": {
+          "type": "integer",
+          "default": 0,
+          "title": "The items Schema",
+          "examples": [
+            3
+          ]
+        },
+        "current": {
+          "type": "integer",
+          "default": 0,
+          "title": "The current Schema",
+          "examples": [
+            1
+          ]
+        },
+        "last": {
+          "type": "integer",
+          "default": 0,
+          "title": "The last Schema",
+          "examples": [
+            1
+          ]
+        }
+      },
+      "examples": [{
+        "limit": 10,
+        "items": 3,
+        "current": 1,
+        "last": 1
+      }]
+    }
+  },
+  "examples": [{
+    "products": [{
+      "id": 2504915,
+      "key": "nswitcholedbn",
+      "name": "Switch OLED (черный, с неоновыми Joy-Con)",
+      "full_name": "Игровая приставка Nintendo Switch OLED (черный, с неоновыми Joy-Con)",
+      "name_prefix": "Игровая приставка",
+      "extended_name": "Игровая приставка Nintendo Switch OLED (черный, с неоновыми Joy-Con)",
+      "schema": {
+        "key": "console"
+      },
+      "status": "active",
+      "images": {
+        "header": "//content2.onliner.by/catalog/device/header/9736f1406b9df69383590548cd5f3a98.jpeg",
+        "icon": null
+      },
+      "description": "64 ГБ, экран 7\", разрешение игр - Full HD (1080p)",
+      "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholedbn",
+      "reviews": {
+        "rating": 45,
+        "count": 6,
+        "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholedbn/reviews",
+        "url": "https://catalog.api.onliner.by/products/nswitcholedbn/reviews"
+      },
+      "review_url": "https://tech.onliner.by/2021/10/24/obzor-novoj-nintendo-switch-krutoj-ekran-i-vsyo",
+      "url": "https://catalog.api.onliner.by/products/nswitcholedbn",
+      "prices": {
+        "price_min": {
+          "amount": "1061.90",
+          "currency": "BYN",
+          "converted": {
+            "BYN": {
+              "amount": "1061.90",
+              "currency": "BYN"
+            }
+          }
+        },
+        "price_max": {
+          "amount": "1335.00",
+          "currency": "BYN",
+          "converted": {
+            "BYN": {
+              "amount": "1335.00",
+              "currency": "BYN"
+            }
+          }
+        },
+        "offers": {
+          "count": 16
+        },
+        "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholedbn/prices",
+        "url": "https://shop.api.onliner.by/products/nswitcholedbn/positions"
+      },
+      "second": {
+        "offers_count": 0,
+        "min_price": null
+      }
+    },
+      {
+        "id": 2504887,
+        "key": "nswitcholed",
+        "name": "Switch OLED (белый)",
+        "full_name": "Игровая приставка Nintendo Switch OLED (белый)",
+        "name_prefix": "Игровая приставка",
+        "extended_name": "Игровая приставка Nintendo Switch OLED (белый)",
+        "schema": {
+          "key": "console"
+        },
+        "status": "active",
+        "images": {
+          "header": "//content2.onliner.by/catalog/device/header/00800130914e1bfc38710fc9425994b7.jpeg",
+          "icon": null
+        },
+        "description": "64 ГБ, экран 7\", разрешение игр - Full HD (1080p)",
+        "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholed",
+        "reviews": {
+          "rating": 45,
+          "count": 6,
+          "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholed/reviews",
+          "url": "https://catalog.api.onliner.by/products/nswitcholed/reviews"
+        },
+        "review_url": "https://tech.onliner.by/2021/10/24/obzor-novoj-nintendo-switch-krutoj-ekran-i-vsyo",
+        "url": "https://catalog.api.onliner.by/products/nswitcholed",
+        "prices": {
+          "price_min": {
+            "amount": "1060.90",
+            "currency": "BYN",
+            "converted": {
+              "BYN": {
+                "amount": "1060.90",
+                "currency": "BYN"
+              }
+            }
+          },
+          "price_max": {
+            "amount": "1312.86",
+            "currency": "BYN",
+            "converted": {
+              "BYN": {
+                "amount": "1312.86",
+                "currency": "BYN"
+              }
+            }
+          },
+          "offers": {
+            "count": 21
+          },
+          "html_url": "https://catalog.onliner.by/console/nintendo/nswitcholed/prices",
+          "url": "https://shop.api.onliner.by/products/nswitcholed/positions"
+        },
+        "second": {
+          "offers_count": 3,
+          "min_price": {
+            "amount": "1000.00",
+            "currency": "BYN"
+          }
+        }
+      },
+      {
+        "id": 3554855,
+        "key": "nswoledspl3ed",
+        "name": "Switch OLED Splatoon 3 Edition",
+        "full_name": "Игровая приставка Nintendo Switch OLED Splatoon 3 Edition",
+        "name_prefix": "Игровая приставка",
+        "extended_name": "Игровая приставка Nintendo Switch OLED Splatoon 3 Edition",
+        "schema": {
+          "key": "console"
+        },
+        "status": "active",
+        "images": {
+          "header": "//content2.onliner.by/catalog/device/header/ab70093af95a76c2354117bf2e189364.jpeg",
+          "icon": null
+        },
+        "description": "64 ГБ, экран 7\", разрешение игр - Full HD (1080p), \tигровая стилизация",
+        "html_url": "https://catalog.onliner.by/console/nintendo/nswoledspl3ed",
+        "reviews": {
+          "rating": 45,
+          "count": 6,
+          "html_url": "https://catalog.onliner.by/console/nintendo/nswoledspl3ed/reviews",
+          "url": "https://catalog.api.onliner.by/products/nswoledspl3ed/reviews"
+        },
+        "review_url": "https://tech.onliner.by/2021/10/24/obzor-novoj-nintendo-switch-krutoj-ekran-i-vsyo",
+        "url": "https://catalog.api.onliner.by/products/nswoledspl3ed",
+        "prices": {
+          "price_min": {
+            "amount": "1294.90",
+            "currency": "BYN",
+            "converted": {
+              "BYN": {
+                "amount": "1294.90",
+                "currency": "BYN"
+              }
+            }
+          },
+          "price_max": {
+            "amount": "1451.50",
+            "currency": "BYN",
+            "converted": {
+              "BYN": {
+                "amount": "1451.50",
+                "currency": "BYN"
+              }
+            }
+          },
+          "offers": {
+            "count": 15
+          },
+          "html_url": "https://catalog.onliner.by/console/nintendo/nswoledspl3ed/prices",
+          "url": "https://shop.api.onliner.by/products/nswoledspl3ed/positions"
+        },
+        "second": {
+          "offers_count": 0,
+          "min_price": null
+        }
+      }],
+    "total": 3,
+    "page": {
+      "limit": 10,
+      "items": 3,
+      "current": 1,
+      "last": 1
+    }
+  }]
+}
