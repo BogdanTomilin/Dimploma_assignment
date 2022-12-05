@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="PositiveTests">
-
-    <parameter name="url" value="https://litnet.com/"/>
+<suite name="AllTests">
 
     <test name="Litnet Test">
         <classes>
-<!--        <class name="First_Test.PositiveTests"/>-->
+            <class name="First_Test.PositiveTests"/>
+        </classes>
+    </test>
+
+    <test name="Litnet Test">
+        <classes>
             <class name="First_Test.NegativeTest"/>
         </classes>
     </test>
+
+    <test name="Litnet Test">
+        <classes>
+            <class name="First_Test.APITests"/>
+        </classes>
+    </test>
+
 </suite>

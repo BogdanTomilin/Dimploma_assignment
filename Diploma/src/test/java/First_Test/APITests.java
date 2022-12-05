@@ -42,6 +42,14 @@ public class APITests {
         response.then().assertThat().body(matchesJsonSchema(getJsonData("productsList2")));
     }
 
+    @Test(description = "Описание теста")
+    public void getTestFour() {
+        Response response = given().header("Content-Type", "application/json").body(getJsonData("informationList")).post("/user.api/login");
+        response.then().assertThat().statusCode(422);
+        Assert.assertEquals(response.then().extract().response().jsonPath().getString("message"), "Validation failed");
+
+    }
+
     public String getJsonData(String filename) {
         try {
             return new String(Files.readAllBytes(Paths.get("files/" + filename + ".json")));
