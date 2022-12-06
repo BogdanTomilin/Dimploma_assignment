@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="AllTests">
+<suite name="AllTestLitnet" thread-count="1" parallel="tests" >
 
     <test name="Litnet Test">
         <classes>
             <class name="First_Test.PositiveTests"/>
-        </classes>
-    </test>
-
-    <test name="Litnet Test">
-        <classes>
             <class name="First_Test.NegativeTest"/>
-        </classes>
-    </test>
-
-    <test name="Litnet Test">
-        <classes>
             <class name="First_Test.APITests"/>
         </classes>
     </test>
+
+<!--    <test name="Litnet Test">-->
+<!--        <classes>-->
+<!--            <class name="First_Test.NegativeTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="Onliner Test">-->
+<!--        <classes>-->
+<!--            <class name="First_Test.APITests"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 </suite>

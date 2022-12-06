@@ -76,8 +76,6 @@ public abstract class BasePage {
         findElement(locator).sendKeys(enterData);
     }
 
-
-
     protected void click(By locator) {
         log.debug("I'm click by :: " + locator);
         verifyElementClickable(locator);
@@ -94,7 +92,7 @@ public abstract class BasePage {
         return findElement(locator).getText();
     }
 
-    protected String getText(WebElement webElement) {
+    protected static String getText(WebElement webElement) {
         log.debug("I'm get text by  :: " + webElement);
         return webElement.getText();
     }

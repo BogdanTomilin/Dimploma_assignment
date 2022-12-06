@@ -8,7 +8,7 @@ import pageObjects.baseObjects.BasePage;
 
 public class BadData extends BasePage {
 
-    private final By find = By.cssSelector("[class='ln_topbar_search-icon']>[class='svg-icon']");
+    private final By find = By.cssSelector("[class='ln_topbar_search-icon']");
     private final By title = By.cssSelector("[class='l-container']>[class='alert alert-danger']");
 
     public BadData clickFind(){

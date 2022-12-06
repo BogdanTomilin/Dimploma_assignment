@@ -22,39 +22,57 @@ public class PositiveTests extends BaseTest {
                     .clickLogin();
     }
 
-    @Test (priority = 3)
+    @Test (priority = 1 , description = "Тест на проверку всплывающего сообщения")
     public void positiveTestTwo (){
         new PopUpWindow()
                 .clickBell()
                 .checkTableIsDisplayed2();
     }
 
-
-    @Test (priority = 1)
+    @Test (priority = 2 , description = "Тест на создание сущности")
     public void positiveTestThree (){
         new CreateEssence()
-                .clickLitnetBtn()
-                .clickFantasyGenre()
+                .clickBookType("fentezi")
                 .clickBookOne()
                 .clickAddInLibrary()
                 .clickMyLibrary()
                 .verifyLibrary();
     }
 
-    @Test (priority = 2)
+    @Test (priority = 3 , description = "Tест на удаление сущности")
     public void positiveTestFour (){
-       new RemoveEssence()
-               .clickMove()
-               .clickRemoveFromLibrary()
-               .verifyLibrary();
+        new RemoveEssence()
+                .scrollToCenter()
+                .clickMove()
+                .clickRemoveFromLibrary()
+                .verifyLibrary();
     }
 
-    @Test (priority = 4)
-    public void testSix(){
-        new RemoveEssence()
-                .clickEditProfile();
-        new ProfileEditing()
+    @Test (priority = 4 , description ="Tест на загрузку файла")
+    public void positiveTestSix(){
+        new DataExceedingAllowable()
+                .clickEditProfile()
                 .clickChangePhotoBtn();
+    }
+
+    @Test  (priority = 5 , description = "Tест на проверку поля для ввода на граничные значения")
+    public void positiveTestOne () {
+        new DataExceedingAllowable()
+                .clickAccount()
+                .clickEditProfile()
+                .enterLimit("123456789012345678901234567890123456789")
+                .verifyLimitValuesNormal()
+                .enterLimit("1234567890123456789012345678901234567890")
+                .verifyLimitValuesNormal();
+
+    }
+
+    @Test (priority = 6 , description = "Tест отображения диалогового окна")
+    public void positiveTestFive(){
+        new DataExceedingAllowable()
+                .clickAddRomance();
+        new AddNewRomance()
+                .checkDialogMassage();
     }
 
 }
