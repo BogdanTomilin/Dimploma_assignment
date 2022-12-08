@@ -30,7 +30,7 @@ public class DataExceedingAllowable extends BasePage {
 
     private final By clickSaveBtn = By.id("avatar-submit-button");
 
-    private final By addRomance = By.linkText("Добавить роман");
+
 
 
     public DataExceedingAllowable clickChangePhotoBtn(){
@@ -40,16 +40,15 @@ public class DataExceedingAllowable extends BasePage {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         driver.findElement(clickSaveBtn);
         js.executeScript("window.scrollBy(0,500)");
+        actions.moveToElement(findElement(clickSaveBtn)).build().perform();
         wait.until(ExpectedConditions.elementToBeClickable(clickSaveBtn));
+        waitVisibilityOfElement(clickSaveBtn);
+        waitUntil(5);
         click(clickSaveBtn);
         return this;
     }
 
 
-    public DataExceedingAllowable clickAddRomance(){
-        click(addRomance);
-        return this;
-    }
 
     public DataExceedingAllowable clickAccount(){
         click(account);

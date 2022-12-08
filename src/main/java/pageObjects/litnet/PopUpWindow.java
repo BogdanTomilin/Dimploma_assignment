@@ -1,6 +1,7 @@
 package pageObjects.litnet;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import pageObjects.baseObjects.BasePage;
 
@@ -17,9 +18,10 @@ public class PopUpWindow extends BasePage {
         return this;
     }
 
-    public PopUpWindow checkTableIsDisplayed2() {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+    public PopUpWindow checkTableIsDisplayed() {
+        waitVisibilityOfElement(windowBell);
         Assert.assertTrue(driver.findElement(windowBell).isDisplayed());
+        waitUntil(2);
         return this;
     }
 

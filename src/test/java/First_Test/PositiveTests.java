@@ -22,14 +22,14 @@ public class PositiveTests extends BaseTest {
                     .clickLogin();
     }
 
-    @Test (priority = 1 , description = "Тест на проверку всплывающего сообщения")
+    @Test (priority = 3 , description = "Тест на проверку всплывающего сообщения")
     public void positiveTestTwo (){
         new PopUpWindow()
                 .clickBell()
-                .checkTableIsDisplayed2();
+                .checkTableIsDisplayed();
     }
 
-    @Test (priority = 2 , description = "Тест на создание сущности")
+    @Test (priority = 1 , description = "Тест на создание сущности")
     public void positiveTestThree (){
         new CreateEssence()
                 .clickBookType("fentezi")
@@ -39,7 +39,7 @@ public class PositiveTests extends BaseTest {
                 .verifyLibrary();
     }
 
-    @Test (priority = 3 , description = "Tест на удаление сущности")
+    @Test (priority = 2 , description = "Tест на удаление сущности")
     public void positiveTestFour (){
         new RemoveEssence()
                 .scrollToCenter()
@@ -48,14 +48,14 @@ public class PositiveTests extends BaseTest {
                 .verifyLibrary();
     }
 
-    @Test (priority = 4 , description ="Tест на загрузку файла")
+    @Test (priority = 7 , description ="Tест на загрузку файла")
     public void positiveTestSix(){
         new DataExceedingAllowable()
                 .clickEditProfile()
                 .clickChangePhotoBtn();
     }
 
-    @Test  (priority = 5 , description = "Tест на проверку поля для ввода на граничные значения")
+    @Test  (priority = 4 , description = "Tест на проверку поля для ввода на граничные значения")
     public void positiveTestOne () {
         new DataExceedingAllowable()
                 .clickAccount()
@@ -67,11 +67,10 @@ public class PositiveTests extends BaseTest {
 
     }
 
-    @Test (priority = 6 , description = "Tест отображения диалогового окна")
+    @Test (priority = 8 , description = "Tест отображения диалогового окна")
     public void positiveTestFive(){
-        new DataExceedingAllowable()
-                .clickAddRomance();
         new AddNewRomance()
+                .clickAddRomance2("Добавить роман")
                 .checkDialogMassage();
     }
 

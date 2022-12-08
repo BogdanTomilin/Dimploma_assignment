@@ -24,14 +24,14 @@ public class NegativeTest extends BaseTest {
                 .clickLogin();
     }
 
-    @Test (priority = 2 , description =  "Tест на использование некорректных данных")
+    @Test (priority = 6 , description =  "Tест на использование некорректных данных")
     public void negativeTestOne () {
         new BadData()
                 .clickFind()
                 .VerifyBadData();
     }
 
-    @Test  (priority = 1 , description = "Tест на ввод данных превышающих допустимые")
+    @Test  (priority = 5 , description = "Tест на ввод данных превышающих допустимые")
     public void negativeTestTwo (){
         new DataExceedingAllowable()
                 .clickAccount()
