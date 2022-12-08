@@ -4,22 +4,11 @@
 
     <test name="Litnet Test">
         <classes>
-            <class name="First_Test.PositiveTests"/>
-            <class name="First_Test.NegativeTest"/>
             <class name="First_Test.APITests"/>
+            <class name="First_Test.NegativeTest"/>
+            <class name="First_Test.PositiveTests"/>
         </classes>
     </test>
 
-<!--    <test name="Litnet Test">-->
-<!--        <classes>-->
-<!--            <class name="First_Test.NegativeTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-
-<!--    <test name="Onliner Test">-->
-<!--        <classes>-->
-<!--            <class name="First_Test.APITests"/>-->
-<!--        </classes>-->
-<!--    </test>-->
 
 </suite>
